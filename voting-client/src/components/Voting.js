@@ -2,7 +2,7 @@ import React from 'react';
 
 class Voting extends React.Component {
   
-  
+
   getPair() {
     return this.props.pair || [];
   }
@@ -10,7 +10,8 @@ class Voting extends React.Component {
   render() {
     return <div className="voting">
       {this.getPair().map(entry =>
-        <button key={entry}>
+        <button key={entry}
+                onClick={() => this.props.vote(entry)}>
           <h1>{entry}</h1>
         </button>
       )}
