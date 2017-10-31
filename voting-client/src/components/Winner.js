@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Winner extends React.Component{
+class Winner extends React.PureComponent{
     
   render() {
     return <div className="winner">
