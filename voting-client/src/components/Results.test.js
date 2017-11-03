@@ -7,7 +7,7 @@ import {
   Simulate
 } from 'react-dom/test-utils';
 import {List, Map} from 'immutable';
-import Results from './Results';
+import {Results} from './Results';
 
 describe('Results', () => {
 
